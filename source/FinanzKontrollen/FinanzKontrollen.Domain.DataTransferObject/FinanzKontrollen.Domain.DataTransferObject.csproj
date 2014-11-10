@@ -39,6 +39,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DTOAccount.cs" />
+    <Compile Include="DTOBalance.cs" />
+    <Compile Include="DTOCompoundOperation.cs" />
+    <Compile Include="DTOOperation.cs" />
+    <Compile Include="DTOOperationTag.cs" />
+    <Compile Include="DTOOperationType.cs" />
+    <Compile Include="DTOTag.cs" />
+    <Compile Include="DTOUser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

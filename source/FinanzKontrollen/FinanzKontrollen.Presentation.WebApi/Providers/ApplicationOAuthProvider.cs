@@ -29,25 +29,31 @@ namespace FinanzKontrollen.Presentation.WebApi.Providers
 
         public override async Task GrantResourceOwnerCredentials(OAuthGrantResourceOwnerCredentialsContext context)
         {
-            var userManager = context.OwinContext.GetUserManager<ApplicationUserManager>();
+            bool isValidUser = false;
+            context.OwinContext.Response.Headers.Add("Access-Control-Allow-Origin", new[] { "*" });
 
-            ApplicationUser user = await userManager.FindAsync(context.UserName, context.Password);
+            if (context.UserName == "test" && context.Password == "test")
+            {
+                isValidUser = true;
+            }
 
-            if (user == null)
+            if (!isValidUser)
             {
                 context.SetError("invalid_grant", "The user name or password is incorrect.");
                 return;
             }
 
-            ClaimsIdentity oAuthIdentity = await user.GenerateUserIdentityAsync(userManager,
-               OAuthDefaults.AuthenticationType);
-            ClaimsIdentity cookiesIdentity = await user.GenerateUserIdentityAsync(userManager,
-                CookieAuthenticationDefaults.AuthenticationType);
+            var identity = new ClaimsIdentity("Authentication");
 
-            AuthenticationProperties properties = CreateProperties(user.UserName);
-            AuthenticationTicket ticket = new AuthenticationTicket(oAuthIdentity, properties);
+            identity.AddClaim(new Claim(ClaimTypes.Name, context.UserName));
+            identity.AddClaim(new Claim("sub", context.UserName));
+            identity.AddClaim(new Claim(ClaimTypes.Role, "Manager"));
+            identity.AddClaim(new Claim(ClaimTypes.Role, "Supervisor"));
+
+            var props = CreateProperties(context.UserName);
+
+            var ticket = new AuthenticationTicket(identity, props);
             context.Validated(ticket);
-            context.Request.Context.Authentication.SignIn(cookiesIdentity);
         }
 
         public override Task TokenEndpoint(OAuthTokenEndpointContext context)
