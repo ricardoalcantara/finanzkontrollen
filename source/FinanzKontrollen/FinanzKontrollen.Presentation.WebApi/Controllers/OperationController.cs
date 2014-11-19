@@ -1,4 +1,4 @@
-﻿using FinanzKontrollen.Presentation.WebApi.Models;
+﻿using FinanzKontrollen.Presentation.WebApi.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,18 +23,21 @@ namespace FinanzKontrollen.Presentation.WebApi.Controllers
         }
 
         // POST api/values
-        public void Post([FromBody]OperationModel accounts)
+        public AcknowledgeModel Post([FromBody]OperationModel accounts)
         {
+            return new AcknowledgeModel() { ProcessedId = 0, Message = "Operation Inserted" };
         }
 
         // PUT api/values/5
-        public void Put(int id, [FromBody]OperationModel accounts)
+        public AcknowledgeModel Put(int id, [FromBody]OperationModel accounts)
         {
+            return new AcknowledgeModel() { ProcessedId = id, Message = "Operation Updated" };
         }
 
         // DELETE api/values/5
-        public void Delete(int id)
+        public AcknowledgeModel Delete(int id)
         {
+            return new AcknowledgeModel() { ProcessedId = id, Message = "Operation Inserted" };
         }
     }
 }

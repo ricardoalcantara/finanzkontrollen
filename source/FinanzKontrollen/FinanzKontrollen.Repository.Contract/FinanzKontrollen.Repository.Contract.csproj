@@ -39,7 +39,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IOperationRepository.cs" />
+    <Compile Include="IAccountRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FinanzKontrollen.Repository.Model\FinanzKontrollen.Repository.Model.csproj">
+      <Project>{0cf0a1fe-c155-42ca-bdbf-2a05f40811d0}</Project>
+      <Name>FinanzKontrollen.Repository.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

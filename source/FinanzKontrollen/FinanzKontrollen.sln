@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30723.0
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{4E9A8889-5201-4091-9DDE-0DEA0E697AFF}"
 	ProjectSection(SolutionItems) = preProject
@@ -33,6 +33,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanzKontrollen.Domain.Default", "FinanzKontrollen.Domain.Default\FinanzKontrollen.Domain.Default.csproj", "{4693A862-7DEC-4D9B-B472-D03000795175}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanzKontrollen.Presentation.WebApi", "FinanzKontrollen.Presentation.WebApi\FinanzKontrollen.Presentation.WebApi.csproj", "{EE37606F-BA86-4E0F-AF83-3ABC55AE2A97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanzKontrollen.Presentation.Model", "FinanzKontrollen.Presentation.Model\FinanzKontrollen.Presentation.Model.csproj", "{34E1A0B9-F5F6-48FF-9DBA-2A5BA2606C3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanzKontrollen.Presentation.RestClientApi", "FinanzKontrollen.Presentation.RestClientApi\FinanzKontrollen.Presentation.RestClientApi.csproj", "{561892FC-4245-473B-8F71-DCFF13D80443}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -72,6 +76,14 @@ Global
 		{EE37606F-BA86-4E0F-AF83-3ABC55AE2A97}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE37606F-BA86-4E0F-AF83-3ABC55AE2A97}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE37606F-BA86-4E0F-AF83-3ABC55AE2A97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34E1A0B9-F5F6-48FF-9DBA-2A5BA2606C3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34E1A0B9-F5F6-48FF-9DBA-2A5BA2606C3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34E1A0B9-F5F6-48FF-9DBA-2A5BA2606C3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34E1A0B9-F5F6-48FF-9DBA-2A5BA2606C3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{561892FC-4245-473B-8F71-DCFF13D80443}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{561892FC-4245-473B-8F71-DCFF13D80443}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{561892FC-4245-473B-8F71-DCFF13D80443}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{561892FC-4245-473B-8F71-DCFF13D80443}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -85,5 +97,7 @@ Global
 		{17DA8F9A-F033-45B9-A00B-079C0BCB1133} = {4FFB2B4F-56DF-4822-90FF-428C1A6803FC}
 		{4693A862-7DEC-4D9B-B472-D03000795175} = {4FFB2B4F-56DF-4822-90FF-428C1A6803FC}
 		{EE37606F-BA86-4E0F-AF83-3ABC55AE2A97} = {C73AFDA1-F83E-41C3-8619-07D4F3A96FA1}
+		{34E1A0B9-F5F6-48FF-9DBA-2A5BA2606C3B} = {C73AFDA1-F83E-41C3-8619-07D4F3A96FA1}
+		{561892FC-4245-473B-8F71-DCFF13D80443} = {C73AFDA1-F83E-41C3-8619-07D4F3A96FA1}
 	EndGlobalSection
 EndGlobal

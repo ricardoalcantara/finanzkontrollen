@@ -39,7 +39,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IOperationDomain.cs" />
+    <Compile Include="IAccountDomain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FinanzKontrollen.Domain.DataTransferObject\FinanzKontrollen.Domain.DataTransferObject.csproj">
+      <Project>{6f433829-8805-41df-9050-461e7caab62f}</Project>
+      <Name>FinanzKontrollen.Domain.DataTransferObject</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

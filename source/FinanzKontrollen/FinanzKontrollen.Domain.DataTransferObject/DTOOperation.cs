@@ -8,11 +8,12 @@ namespace FinanzKontrollen.Domain.DataTransferObject
 {
     public class DTOOperation
     {
+        public int? Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
         public DateTime PayDate { get; set; }
-        public int Id { get; set; }
         public int TypeId { get; set; }
         public double Ammount { get; set; }
+        public int? AccountId { get; set; }
     }
 }

@@ -33,5 +33,67 @@ namespace FinanzKontrollen.Infrastructure.MapperExtension
                 Token = dtoUser.Token
             } : null);
         }
+
+        public static DTOAccount ToDtoAccount(this Account account)
+        {
+            return (account != null ? new DTOAccount()
+            {
+                Id = account.Id,
+                Name = account.Name,
+            } : null);
+        }
+
+        public static Account ToAccount(this DTOAccount dtoAccount)
+        {
+            return (dtoAccount != null ? new Account()
+            {
+                Id = dtoAccount.Id,
+                Name = dtoAccount.Name,
+            } : null);
+        }
+
+        public static IEnumerable<DTOAccount> ToListDtoAccount(this IEnumerable<Account> accounts)
+        {
+            foreach (Account account in accounts)
+            {
+                yield return account.ToDtoAccount();
+            }
+        }
+
+        public static DTOOperation ToDtoOperation(this Operation operation)
+        {
+            return (operation != null ? new DTOOperation()
+            {
+                Id = operation.Id,
+                Name = operation.Name,
+                Description = operation.Description,
+                PayDate = operation.PayDate,
+                TypeId = operation.TypeId,
+                Ammount = operation.Ammount,
+                AccountId = operation.AccountId
+            } : null);
+        }
+
+        public static Operation ToOperation(this DTOOperation dtoOperation)
+        {
+            return (dtoOperation != null ? new Operation()
+            {
+                Id = dtoOperation.Id,
+                Name = dtoOperation.Name,
+                Description = dtoOperation.Description,
+                PayDate = dtoOperation.PayDate,
+                TypeId = dtoOperation.TypeId,
+                Ammount = dtoOperation.Ammount,
+                AccountId = dtoOperation.AccountId
+            } : null);
+        }
+
+        public static IEnumerable<DTOOperation> ToListDtoOperation(this IEnumerable<Operation> operations)
+        {
+            foreach (Operation Operation in operations)
+            {
+                yield return Operation.ToDtoOperation();
+            }
+        }
     }
 }

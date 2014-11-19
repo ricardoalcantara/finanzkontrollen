@@ -129,6 +129,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\" />
+    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -141,8 +142,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\AccountModels.cs" />
-    <Compile Include="Models\OperationModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -175,7 +174,24 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\FinanzKontrollen.Domain.Contract\FinanzKontrollen.Domain.Contract.csproj">
+      <Project>{17da8f9a-f033-45b9-a00b-079c0bcb1133}</Project>
+      <Name>FinanzKontrollen.Domain.Contract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FinanzKontrollen.Domain.DataTransferObject\FinanzKontrollen.Domain.DataTransferObject.csproj">
+      <Project>{6f433829-8805-41df-9050-461e7caab62f}</Project>
+      <Name>FinanzKontrollen.Domain.DataTransferObject</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FinanzKontrollen.Domain.Default\FinanzKontrollen.Domain.Default.csproj">
+      <Project>{4693a862-7dec-4d9b-b472-d03000795175}</Project>
+      <Name>FinanzKontrollen.Domain.Default</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FinanzKontrollen.Presentation.Model\FinanzKontrollen.Presentation.Model.csproj">
+      <Project>{34e1a0b9-f5f6-48ff-9dba-2a5ba2606c3b}</Project>
+      <Name>FinanzKontrollen.Presentation.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
