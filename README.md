@@ -3,7 +3,7 @@
 
 It's a small financial control system, built using DDD, ASP.NET MVC, API, REST and other technology.
 
-Currently It's separated this way:
+It's structured this way:
 
 ###Repository
 
