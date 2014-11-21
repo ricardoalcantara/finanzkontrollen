@@ -1,4 +1,4 @@
-﻿using FinanzKontrollen.Presentation.WebApi.Model;
+﻿using FinanzKontrollen.Presentation.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;

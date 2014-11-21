@@ -1,7 +1,7 @@
 ﻿using FinanzKontrollen.Domain.Contract;
 using FinanzKontrollen.Domain.DataTransferObject;
 using FinanzKontrollen.Domain.Default;
-using FinanzKontrollen.Presentation.WebApi.Model;
+using FinanzKontrollen.Presentation.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
