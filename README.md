@@ -1,7 +1,7 @@
 #finanzkontrollen
 ##Financial Controls
 
-It's a small financial control system, built using DDD, ASP.NET MVC, API, REST and other technology.
+It's a small financial control system, built using DDD, ASP.NET MVC, API, REST and other technologies.
 
 It's structured this way:
 
