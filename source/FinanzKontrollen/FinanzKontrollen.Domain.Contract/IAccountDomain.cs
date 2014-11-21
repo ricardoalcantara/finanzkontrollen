@@ -8,5 +8,6 @@ namespace FinanzKontrollen.Domain.Contract
     {
         IEnumerable<DTOAccount> ListAccounts();
         int InsertAccount(DTOAccount account);
+        void DeleteAccount(int id);
     }
 }

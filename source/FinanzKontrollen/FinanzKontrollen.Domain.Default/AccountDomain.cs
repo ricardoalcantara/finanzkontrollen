@@ -34,5 +34,10 @@ namespace FinanzKontrollen.Domain.Default
 
             return this.accountRepository.InsertAccount(account.ToAccount());
         }
+        
+        public void DeleteAccount(int id)
+        {
+            this.accountRepository.DeleteAccount(id);
+        }
     }
 }

@@ -61,6 +61,8 @@ namespace FinanzKontrollen.Presentation.WebApi.Controllers
 
         public AcknowledgeModel Delete(int id)
         {
+            this.accountDomain.DeleteAccount(id);
+
             return new AcknowledgeModel() { ProcessedId = id, Message = "Account deleted" };
         }
     }

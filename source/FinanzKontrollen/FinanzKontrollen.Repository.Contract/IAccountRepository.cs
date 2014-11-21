@@ -11,5 +11,6 @@ namespace FinanzKontrollen.Repository.Contract
     {
         IEnumerable<Account> ListAccounts();
         int InsertAccount(Account account);
+        void DeleteAccount(int id);
     }
 }

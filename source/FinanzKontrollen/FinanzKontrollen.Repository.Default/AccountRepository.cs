@@ -34,6 +34,15 @@ namespace FinanzKontrollen.Repository.Default
             return Id;
         }
 
+        public void DeleteAccount(int id)
+        {
+            this.Conn.Open();
+
+            int totalRows = this.Conn.Connection.Execute(AccountRepository.DELETE_ACCOUNT, new { Id = id });
+
+            this.Conn.Close();
+        }
+
         private const string GET_ALL_ACCOUNTS = @"SELECT account.Id,
     account.Name
 FROM finanzkontrollen.account
@@ -45,5 +54,7 @@ VALUES
 (@Id,
  @Name);
 ";
+        private const string DELETE_ACCOUNT = @"DELETE FROM finanzkontrollen.account
+WHERE account.Id = @Id;";
     }
 }

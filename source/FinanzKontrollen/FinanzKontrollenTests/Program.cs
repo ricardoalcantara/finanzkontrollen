@@ -12,7 +12,15 @@ namespace FinanzKontrollenTests
         {
             FinanzKontrollen.Presentation.RestClientApi.Account accountApi = new FinanzKontrollen.Presentation.RestClientApi.Account();
 
-            var account = accountApi.Get();
+            var accounts = accountApi.Get();
+
+            foreach (var account in accounts)
+            {
+                if (string.Compare(account.Name, "Itau", true) != 0)
+                {
+                    accountApi.Delete(account.Id);
+                }
+            }
         }
     }
 }
