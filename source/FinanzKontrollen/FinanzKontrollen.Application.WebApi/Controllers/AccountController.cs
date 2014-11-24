@@ -1,7 +1,7 @@
 ﻿using FinanzKontrollen.Domain.Contract;
 using FinanzKontrollen.Domain.DataTransferObject;
 using FinanzKontrollen.Domain.Default;
-using FinanzKontrollen.Presentation.Model;
+using FinanzKontrollen.Application.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +9,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 
-namespace FinanzKontrollen.Presentation.WebApi.Controllers
+namespace FinanzKontrollen.Application.WebApi.Controllers
 {
     public class AccountController : ApiController
     {

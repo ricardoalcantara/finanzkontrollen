@@ -7,8 +7,8 @@
     <ProjectGuid>{34E1A0B9-F5F6-48FF-9DBA-2A5BA2606C3B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FinanzKontrollen.Presentation.Model</RootNamespace>
-    <AssemblyName>FinanzKontrollen.Presentation.Model</AssemblyName>
+    <RootNamespace>FinanzKontrollen.Application.Model</RootNamespace>
+    <AssemblyName>FinanzKontrollen.Application.Model</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

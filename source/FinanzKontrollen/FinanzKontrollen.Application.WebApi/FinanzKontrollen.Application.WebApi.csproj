@@ -11,8 +11,8 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FinanzKontrollen.Presentation.WebApi</RootNamespace>
-    <AssemblyName>FinanzKontrollen.Presentation.WebApi</AssemblyName>
+    <RootNamespace>FinanzKontrollen.Application.WebApi</RootNamespace>
+    <AssemblyName>FinanzKontrollen.Application.WebApi</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
@@ -187,9 +187,9 @@
       <Project>{4693a862-7dec-4d9b-b472-d03000795175}</Project>
       <Name>FinanzKontrollen.Domain.Default</Name>
     </ProjectReference>
-    <ProjectReference Include="..\FinanzKontrollen.Presentation.Model\FinanzKontrollen.Presentation.Model.csproj">
+    <ProjectReference Include="..\FinanzKontrollen.Application.Model\FinanzKontrollen.Application.Model.csproj">
       <Project>{34e1a0b9-f5f6-48ff-9dba-2a5ba2606c3b}</Project>
-      <Name>FinanzKontrollen.Presentation.Model</Name>
+      <Name>FinanzKontrollen.Application.Model</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

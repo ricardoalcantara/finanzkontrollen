@@ -16,7 +16,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{4FFB2B
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{BD5957CE-D164-4281-AA9F-27A75A05D831}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{C73AFDA1-F83E-41C3-8619-07D4F3A96FA1}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{C73AFDA1-F83E-41C3-8619-07D4F3A96FA1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanzKontrollen.Repository.Default", "FinanzKontrollen.Repository.Default\FinanzKontrollen.Repository.Default.csproj", "{C9F995F8-124D-42EF-A514-C738E9C67126}"
 EndProject
@@ -32,13 +32,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanzKontrollen.Domain.Con
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanzKontrollen.Domain.Default", "FinanzKontrollen.Domain.Default\FinanzKontrollen.Domain.Default.csproj", "{4693A862-7DEC-4D9B-B472-D03000795175}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanzKontrollen.Presentation.WebApi", "FinanzKontrollen.Presentation.WebApi\FinanzKontrollen.Presentation.WebApi.csproj", "{EE37606F-BA86-4E0F-AF83-3ABC55AE2A97}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanzKontrollen.Application.WebApi", "FinanzKontrollen.Application.WebApi\FinanzKontrollen.Application.WebApi.csproj", "{EE37606F-BA86-4E0F-AF83-3ABC55AE2A97}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanzKontrollen.Presentation.Model", "FinanzKontrollen.Presentation.Model\FinanzKontrollen.Presentation.Model.csproj", "{34E1A0B9-F5F6-48FF-9DBA-2A5BA2606C3B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanzKontrollen.Application.Model", "FinanzKontrollen.Application.Model\FinanzKontrollen.Application.Model.csproj", "{34E1A0B9-F5F6-48FF-9DBA-2A5BA2606C3B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanzKontrollen.Presentation.RestClientApi", "FinanzKontrollen.Presentation.RestClientApi\FinanzKontrollen.Presentation.RestClientApi.csproj", "{561892FC-4245-473B-8F71-DCFF13D80443}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanzKontrollen.Application.RestClientApi", "FinanzKontrollen.Application.RestClientApi\FinanzKontrollen.Application.RestClientApi.csproj", "{561892FC-4245-473B-8F71-DCFF13D80443}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "View", "View", "{869DC702-1251-4121-8657-508C3216E05A}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{869DC702-1251-4121-8657-508C3216E05A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanzKontrollenTests", "FinanzKontrollenTests\FinanzKontrollenTests.csproj", "{61E4DE24-C558-4C13-A377-7FBCC942B738}"
 EndProject

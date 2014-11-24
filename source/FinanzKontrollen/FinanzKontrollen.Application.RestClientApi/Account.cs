@@ -1,4 +1,4 @@
-﻿using FinanzKontrollen.Presentation.Model;
+﻿using FinanzKontrollen.Application.Model;
 using RestSharp;
 using System;
 using System.Collections.Generic;
@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FinanzKontrollen.Presentation.RestClientApi
+namespace FinanzKontrollen.Application.RestClientApi
 {
     public class Account: FinanzKontrollenRestBase
     {

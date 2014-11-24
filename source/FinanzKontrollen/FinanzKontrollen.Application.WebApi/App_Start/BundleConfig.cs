@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace FinanzKontrollen.Presentation.WebApi
+namespace FinanzKontrollen.Application.WebApi
 {
     public class BundleConfig
     {

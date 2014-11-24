@@ -7,8 +7,8 @@
     <ProjectGuid>{561892FC-4245-473B-8F71-DCFF13D80443}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FinanzKontrollen.Presentation.RestClientApi</RootNamespace>
-    <AssemblyName>FinanzKontrollen.Presentation.RestClientApi</AssemblyName>
+    <RootNamespace>FinanzKontrollen.Application.RestClientApi</RootNamespace>
+    <AssemblyName>FinanzKontrollen.Application.RestClientApi</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
@@ -50,9 +50,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FinanzKontrollen.Presentation.Model\FinanzKontrollen.Presentation.Model.csproj">
+    <ProjectReference Include="..\FinanzKontrollen.Application.Model\FinanzKontrollen.Application.Model.csproj">
       <Project>{34e1a0b9-f5f6-48ff-9dba-2a5ba2606c3b}</Project>
-      <Name>FinanzKontrollen.Presentation.Model</Name>
+      <Name>FinanzKontrollen.Application.Model</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

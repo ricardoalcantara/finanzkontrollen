@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FinanzKontrollen.Presentation.RestClientApi
+namespace FinanzKontrollen.Application.RestClientApi
 {
     public abstract class FinanzKontrollenRestBase
     {

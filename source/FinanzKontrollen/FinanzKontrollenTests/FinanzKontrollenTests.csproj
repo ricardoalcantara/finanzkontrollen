@@ -48,13 +48,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FinanzKontrollen.Presentation.Model\FinanzKontrollen.Presentation.Model.csproj">
+    <ProjectReference Include="..\FinanzKontrollen.Application.Model\FinanzKontrollen.Application.Model.csproj">
       <Project>{34e1a0b9-f5f6-48ff-9dba-2a5ba2606c3b}</Project>
-      <Name>FinanzKontrollen.Presentation.Model</Name>
+      <Name>FinanzKontrollen.Application.Model</Name>
     </ProjectReference>
-    <ProjectReference Include="..\FinanzKontrollen.Presentation.RestClientApi\FinanzKontrollen.Presentation.RestClientApi.csproj">
+    <ProjectReference Include="..\FinanzKontrollen.Application.RestClientApi\FinanzKontrollen.Application.RestClientApi.csproj">
       <Project>{561892fc-4245-473b-8f71-dcff13d80443}</Project>
-      <Name>FinanzKontrollen.Presentation.RestClientApi</Name>
+      <Name>FinanzKontrollen.Application.RestClientApi</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

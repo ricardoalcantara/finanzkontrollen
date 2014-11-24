@@ -7,7 +7,7 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 
-namespace FinanzKontrollen.Presentation.WebApi
+namespace FinanzKontrollen.Application.WebApi
 {
     public class WebApiApplication : System.Web.HttpApplication
     {

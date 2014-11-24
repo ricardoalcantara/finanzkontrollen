@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace FinanzKontrollen.Presentation.WebApi
+namespace FinanzKontrollen.Application.WebApi
 {
     public class FilterConfig
     {

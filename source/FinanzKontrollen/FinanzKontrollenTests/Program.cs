@@ -10,7 +10,7 @@ namespace FinanzKontrollenTests
     {
         static void Main(string[] args)
         {
-            FinanzKontrollen.Presentation.RestClientApi.Account accountApi = new FinanzKontrollen.Presentation.RestClientApi.Account();
+            FinanzKontrollen.Application.RestClientApi.Account accountApi = new FinanzKontrollen.Application.RestClientApi.Account();
 
             var accounts = accountApi.Get();
 

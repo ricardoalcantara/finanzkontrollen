@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace FinanzKontrollen.Presentation.WebApi.Controllers
+namespace FinanzKontrollen.Application.WebApi.Controllers
 {
     public class HomeController : Controller
     {
